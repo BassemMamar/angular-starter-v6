@@ -1,4 +1,4 @@
-# Angular Starter v2
+# Angular Starter v6
 
 This project is an [Angular](https://angular.io/) `6.1.0` project, and was generated with [Angular CLI](https://github.com/angular/angular-cli) version `6.1.5`.
 
