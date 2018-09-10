@@ -19,13 +19,34 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              {
+                "glob": "style-rtl.css",
+                "input": "src/assets/css/",
+                "output": "src/assets/css/"
+              },
+              {
+                "glob": "style.css",
+                "input": "src/assets/css/",
+                "output": "src/assets/css/"
+              },
+              {
+                "glob": "web.config",
+                "input": "src/assets/",
+                "output": "./"
+              },
+              {
+                "glob": "favicon.ico",
+                "input": "src/",
+                "output": "src/"
+              }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {
